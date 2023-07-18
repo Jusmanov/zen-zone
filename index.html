@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<link rel="icon" type="image/ico" href="favicon (1).ico"/>
+	 <style>
+    /* Custom scroll bar styling */
+    body::-webkit-scrollbar {
+      width: 14px;
+    }
+
+    body::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    body::-webkit-scrollbar-thumb {
+      background: #1abc9c;
+      border-radius: 24px;
+    }
+
+    body::-webkit-scrollbar-thumb:hover {
+      background: #148f77;
+    }
+		 
+  </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Zen Zone</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
+</head>
+
+<body>
+	<!-- Start of page / hero section -->
+	<header class="hero">
+		<div class="overlay">
+			<div class="title">
+				<h1>Zen Zone</h1>
+			</div>
+			<div class="logo">a website by jusmanov</div>
+		</div>
+		<div class="slideshow">
+			<div class="slide active">
+				<img src="https://images.hdqwalls.com/wallpapers/silent-evening-forest-minimalism-4k-ip.jpg" alt="Hero Image 1" width="1920" height="1080">
+			</div>
+			<div class="slide">
+				<img src="https://cdna.artstation.com/p/assets/images/images/031/509/572/large/namocchi-art-at4.jpg?1603826316" width="1920" height="1080" alt="Hero Image 2">
+			</div>
+			<div class="slide">
+				<img src="https://www.pixel4k.com/wp-content/uploads/2021/03/forest-waterfall-minimal-4k_1616874255.jpg" width="1920" height="1080" alt="Hero Image 3">
+			</div>
+			<div class="slide">
+				<img src="https://images.hdqwalls.com/wallpapers/reindeer-minimal-forest-minimalism-4k-vh.jpg" width="1920" height="1080" alt="Hero Image 4">
+			</div>
+		</div>
+		<div class="dots-navigation">
+			<span class="dot active"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+		</div>
+	</header>
+
+	<!-- HTML code for Guided Meditation Library section -->
+	<section class="our-mission">
+		<div class="mission-header">
+			<h2 class="headerText">Our Mission</h2>
+		</div>
+		<div class = sub-text>
+			<p>At Zen Zone, we are dedicated to addressing the pervasive issue of stress and disconnection in today's fast-paced society. Our mission is to provide a sanctuary of calm and mindfulness, offering a wide range of guided meditation resources to combat the challenges of daily life. In a world filled with constant distractions and overwhelming demands, we recognize the need for individuals to find solace and reconnect with their inner selves. Through our curated collection of meditation videos, we aim to empower individuals to embrace self-care, cultivate mental well-being, and foster a deeper sense of inner peace. Join us on this transformative journey and discover the power of meditation to navigate life's complexities with serenity and purpose.</p> 
+		</div>
+	</section>
+			
+	
+	<section class="guided-meditation">
+		<div class="gallery-header">
+			<h2 class="headerText">Guided Meditation Videos</h2>
+			<p class="subText">Check out our collection of guided meditation videos for relaxation and mindfulness. We update and freshen up this three-video library every week with new meditation content.</p>
+		</div>
+		<div class="video-gallery">
+			<div class="gallery-slide active"> <!-- Add "active" class to the middle video -->
+				<!-- YouTube video embed code for the first video -->
+				<iframe src="https://www.youtube.com/embed/6p_yaNFSYao" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="gallery-slide">
+				<!-- YouTube video embed code for the second video -->
+				<iframe src="https://www.youtube.com/embed/Xl_B45DpMLU" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="gallery-slide">
+				<!-- YouTube video embed code for the third video -->
+				<iframe src="https://www.youtube.com/embed/ENYYb5vIMkU" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<!-- Add more gallery-slide divs for additional videos -->
+		</div>
+		<div class="arrow-navigation">
+			<div class="arrow left-arrow">
+				<img src="https://cdn-icons-png.flaticon.com/512/109/109618.png" width="28" length="18" alt="Left Arrow">
+			</div>
+			<div class="arrow right-arrow">
+				<img src="https://cdn-icons-png.flaticon.com/512/109/109617.png" width="28" length="18" alt="Right Arrow">
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Spotify embeds -->
+	<div class="music-player">
+		<div class="music-header"><h2>Lofi & Binural Beats Radio</h2></div>
+		<div class="music-subtext"><p>With the help of Spotify, this website has a built-in lofi beats and binaural beats radio (separate) to jam to. Music is a fantastic way to boost your mood.</p></div>
+		<!-- Paste the Spotify playlist embed code here -->
+		<div class="music-player-content">
+			<iframe class = "lofi" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0ZffaiHMLSsxccU2rb4z09?utm_source=generator" width="75%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+			<iframe class = "binural" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3OtbpTfZXTSilCQDdDjUlq?utm_source=generator" width="75%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+			
+		</div>
+	</div>
+
+	<img class = "image" src="https://static.vecteezy.com/system/resources/previews/009/637/790/original/vector-illustration-of-a-meditating-woman-drawn-in-a-cartoon-style-png.png" width = "384" height = "384">
+
+	<div class="meditation-timer">
+	  <h2>Meditation Timer</h2>
+	  <div class="timer-controls">
+	    <select id="timer-dropdown">
+	      <option value="30">30 seconds</option>
+	      <option value="60">1 minute</option>
+	      <option value="300">5 minutes</option>
+	      <option value="600">10 minutes</option>
+	      <option value="1200">20 minutes</option>
+	      <option value="1800">30 minutes</option>
+	    </select>
+	    <button id="start-button">Start</button>
+	    <button id="pause-button">Pause</button>
+	    <button id="stop-button" style="display: none;">Stop</button>
+	  </div>
+	  <div class="countdown-display">00:00</div>
+	</div>
+
+	<section class="quote-generator">
+	  <h2 class="quote-generator-header">Quote Generator</h2>
+	  <p class="quote-generator-description">Learn some valuable and inspirational insights from history's greatest philosophers and figures with this quote generator. Clicking the generate button will display a meaningful quote, whether it's about self-improvement, meditation, etc.</p>
+	  <div class="quote-container">
+	    <p id="quote-text"></p>
+	    <p id="quote-author"></p>
+	    <div class="rating-stars">
+	      <span class="star"></span>
+	      <span class="star"></span>
+	      <span class="star"></span>
+	      <span class="star"></span>
+	      <span class="star"></span>
+	    </div>
+	  </div>
+	  <button id="generate-button">Generate</button>
+	</section>
+
+
+<section class="library">
+  <h2>Zen Library</h2>
+  <p class="description">A collection of information about meditation and mindfulness in the form of videos, articles, books, and podcasts, all in one area. This is where you can learn about and explore meditation and mindfulness.</p>
+  
+  <h3>Articles___________________________________</h3>
+	<ul class="article-links">
+	  <li><a href="https://www.cnn.com/2022/06/13/health/meditation-science-wellness/index.html">How Meditation Could Change The Brain</a></li>
+	  <li><a href="https://www.mindful.org/how-to-meditate/">How to Meditate</a></li>
+	  <li><a href="https://www.mayoclinic.org/tests-procedures/meditation/in-depth/meditation/art-20045858">Meditation: A Simple Fast Way to Reduce Stress</a></li>
+	  <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4895748/">Meditation: Process and Effects</a></li>
+	  <li><a href="https://greatergood.berkeley.edu/article/item/five_ways_mindfulness_meditation_is_good_for_your_health">Five Ways Meditation Is Good for Your Health</a></li>
+	</ul>
+
+
+  <h3>Videos___________________________________</h3>
+  <div class="video-links">
+    <div class="video-link">
+      <a href="https://www.youtube.com/watch?v=q0DMYs4b2Yw&ab_channel=ScientificAmerican">How Does Meditation Change the Brain?</a>
+    </div>
+    <div class="video-link">
+      <a href="https://www.youtube.com/watch?v=CmhkmLFc74E&ab_channel=ImprovementPill">What is Meditation - Why There's So Many Benefits</a>
+    </div>
+    <div class="video-link">
+      <a href="https://www.youtube.com/watch?v=thcEuMDWxoI&ab_channel=YongeyMingyurRinpoche">Meditation is Easier Than You Think</a>
+    </div>
+  </div>
+
+	  <h3>Books___________________________________</h3>
+	<ul class="book-links">
+	  <li><a href="https://www.amazon.com/Waking-Up-Spirituality-Without-Religion/dp/1451636024">Sam Harris - Waking Up</a></li>
+	  <li><a href="https://www.amazon.com/Mind-Illuminated-Meditation-Integrating-Mindfulness/dp/1501156985/ref=sr_1_1?crid=13175EZYC4BYF&keywords=the+mind+illuminated&qid=1689707783&s=books&sprefix=the+mind+illuminate%2Cstripbooks%2C108&sr=1-1">John Yates - The Mind Illuminated</a></li>
+	  <li><a href="https://www.amazon.com/How-Meditate-Practical-Making-Friends/dp/1604079339">Pema Chodron - How to Meditate</a></li>
+	</ul>
+
+
+  <h3>Podcasts___________________________________</h3>
+  <div class="podcast-names">
+    <div class="podcast-name">
+      <p>Huberman lab Podcast</p>
+    </div>
+    <div class="podcast-name">
+      <p>Untangle</p>
+    </div>
+    <div class="podcast-name">
+      <p>The Calmer You</p>
+    </div>
+  </div>
+
+   <h3 class = "media-title">Media___________________________________</h3>
+  <div class="image-collage">
+    <img src="https://m.media-amazon.com/images/I/91YlgRqVmYL._AC_UF1000,1000_QL80_.jpg" alt="Image 1" width="25%" height="25%">
+    <img src="https://i.ytimg.com/vi/tw7XBKhZJh4/maxresdefault.jpg" alt="Image 2" width="25%" height="25%">
+    <img src="https://149631547.v2.pressablecdn.com/wp-content/uploads/2021/05/Huberman-Lab-Podcast-Intro-1920x1080-1.jpeg" alt="Image 3" width="25%" height="25%">
+    <img src="https://i.scdn.co/image/ab6765630000ba8a783e568fec174baaaad52557" alt="Image 4" width="25%" height="25%">
+    <img src="https://m.media-amazon.com/images/I/81iie-yFYbL._AC_UF1000,1000_QL80_.jpg" alt="Image 5" width="25%" height="25%">
+		<img src="https://images.everydayhealth.com/images/emotional-health/meditation/how-meditation-changes-the-brain-rm-722x406.jpg?sfvrsn=7a025ae6_0" alt="Image 5" width="25%" height="25%">
+  </div>
+</section>
+
+
+	<section class="blog-section">
+	  <h2>Mindful Meanderings</h2>
+	  <p class = "blog-desc">A small, humble blog where I write about mindfulness and meditation, our thoughts, and everything in between! Hover over any of the titles below to read blog posts.</p>
+	
+	  <div class="blog-posts">
+	    <div class="blog-post">
+	      <div class="dropdown">
+	        <div class="dropdown-header" onclick="toggleDropdown(this)">
+	          <i class="dropdown-icon"></i>
+	          <span class="dropdown-text">John - The Meditative Rhythm of Raindrops (7/19/23)</span>
+	        </div>
+	        <div class="dropdown-content">
+	          <h3>The Meditative Rhythm of Raindrops</h3>
+	          <p> Close your eyes and listen to the rhythmic patter of raindrops against the windowpane. Each droplet carries a unique frequency, harmonizing with the symphony of nature. As we attune ourselves to the cadence of rainfall, we become more attuned to the present moment, cultivating a sense of calm and appreciation for the simple beauty that surrounds us.</p>
+	        </div>
+	      </div>
+	    </div>
+	
+	    <div class="blog-post">
+	      <div class="dropdown">
+	        <div class="dropdown-header" onclick="toggleDropdown(this)">
+	          <i class="dropdown-icon"></i>
+	          <span class="dropdown-text">John - The Playful Dance of Sunflowers (7/19/23)</span>
+	        </div>
+	        <div class="dropdown-content">
+	          <h3>The Playful Dance of Sunflowers</h3>
+	          <p>Observe a field of sunflowers, their vibrant petals swaying gently in the breeze. Sunflowers naturally follow the sun, turning their faces towards the light. In their elegant dance, they remind us to turn our attention inward, aligning our thoughts and intentions with our inner light. Just as sunflowers find their path towards illumination, we too can seek inner radiance through mindfulness and self-discovery.</p>
+	        </div>
+	      </div>
+	    </div>
+	
+	    <div class="blog-post">
+	      <div class="dropdown">
+	        <div class="dropdown-header" onclick="toggleDropdown(this)">
+	          <i class="dropdown-icon"></i>
+	          <span class="dropdown-text">John - The Labyrinthine Patterns of a Kaleidoscope (7/18/23)</span>
+	        </div>
+	        <div class="dropdown-content">
+	          <h3>The Labyrinthine Patterns of a Kaleidoscope</h3>
+	          <p>Peer through the lens of a kaleidoscope, where vibrant colors and intricate patterns blend and shift with every twist. Each unique configuration represents the kaleidoscope of our thoughts, emotions, and experiences. Mindfulness invites us to observe these ever-changing patterns without attachment, recognizing the impermanence and beauty of each moment.</p>
+	        </div>
+	      </div>
+	    </div>
+	
+	  </div>
+	</section>
+	
+	
+	
+
+	<!-- Footer and contact section -->
+	<footer>
+		<div class="contact-section">
+			<div class="devpost-profile">
+				<a href="https://devpost.com/johnusmanov45?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" target="_blank">
+					<img src="https://seeklogo.com/images/D/devpost-logo-95FF685C5D-seeklogo.com.png" alt="Devpost Profile" width="30" height="30">
+				</a>
+			</div>
+			<div class="github-profile">
+				<a href="https://github.com/Jusmanov" target="_blank">
+					<img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" alt="GitHub Profile" height="30" width="30">
+				</a>
+			</div>
+			<div class="copyright">
+				<p>&copy; 2023 John Usmanov</p>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
