@@ -1,0 +1,641 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+
+
+
+
+/* General styles */
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  background-color: #fafafa;
+	overflow-x: hidden;
+}
+
+.our-mission{
+	font-family: "Raleway", sans-serif;
+	margin-left: 50px;
+}
+
+.our-mission .mission-header{
+	font-size: 28px;
+	color: #2489a7ff;
+	margin-top:50px;
+}
+
+.our-mission .sub-text{
+	font-size: 20px;
+	color:#14456eff;
+	margin-top:-20px;
+	font-weight: 500;
+}
+
+/* Hero section styles */
+.hero {
+	object-fit: cover;
+  position: relative;
+  height: 100vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover; /* Adjust the background-size property */
+}
+
+.hero .overlay {
+	object-fit: cover;
+	position: relative;
+	background-position: center top;
+	background-size: contain;
+	z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+	width: 100%;
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur(0px );
+	-webkit-backdrop-filter: blur( 2.5px );
+	border-radius: 2px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 3px;
+  text-align: center;
+}
+
+.hero .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+	margin-top: -75px;
+}
+
+.hero .title h1 {
+  font-size: 200px;
+  font-weight: bold;
+  color: #ffffff;
+	font-family: 'Staatliches', cursive;
+}
+
+.hero .slideshow {
+	background-size: contain;
+	object-fit:cover;
+  position: absolute;
+  bottom: 0px;
+  left: -325px;
+	overflow-y: clip;
+	background-position: center top;
+}
+
+.hero .slideshow .slide {
+	object-fit: cover;
+	background-position: center top;
+  display: none;
+}
+
+.hero .slideshow .active {
+	object-fit: cover;
+	background-position:top;
+  display: block;
+	background-size;
+}
+
+.hero .dots-navigation {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+	z-index: 2;
+}
+
+.hero .dots-navigation .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.hero .dots-navigation .dot.active {
+  transform: scale(1.5);
+  background-color: #cccccc;
+}
+
+/* Guided meditation section styles */
+.guided-meditation .video-gallery {
+  display: flex;
+  justify-content: center;
+  overflow-x: visible;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 115px;
+	margin-top: 100px;
+  gap: -50px; 
+	width: 100%; /* Adjust the width as needed */
+  height: 175px; /* Adjust the height as needed */
+}
+
+.guided-meditation .gallery-header .headerText{
+	margin-left: 50px;
+	font-size: 32px;
+	margin-top: 200px;
+	font-family: "Raleway", sans-serif;
+	color: #2489a7ff;
+}
+
+.guided-meditation .gallery-header .subText{
+	margin-left: 50px;
+	font-size: 20px;
+	margin-top: 0px;
+	font-family: "Raleway", sans-serif;
+	color: #14456eff
+}
+
+.guided-meditation .gallery-slide {
+  flex: 0 0 auto; 
+  scroll-snap-align: center;
+  max-width: 300px; 
+}
+
+/* Guided meditation section styles */
+.guided-meditation {
+  position: relative; 
+}
+
+.guided-meditation .arrow-navigation {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  right: 0;
+  width: 20%; 
+  margin: 0 auto; 
+}
+
+.guided-meditation .arrow {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.guided-meditation .arrow.right-arrow {
+  margin-left: auto;
+}
+
+.guided-meditation .gallery-slide:not(.active) {
+  opacity: 0.5;
+  transform: scale(1);
+  transition: opacity 0.6s, transform 0.8s;
+}
+
+.guided-meditation .gallery-slide.active {
+  opacity: 1;
+	margin-left: 25px;
+	margin-right: 25px;
+  transform: scale(1.4);
+	z-index: 5
+}
+
+.music-player{
+	background-size:cover;
+	margin-left: 25px;
+	margin-right: auto;
+	font-family: "Raleway", sans-serif;
+	margin-bottom:250px;
+	
+}
+
+.music-player .music-header{
+	font-size: 22px;
+	margin-top: 300px;
+	font-family: "Raleway", sans-serif;
+	color: #1a9499ff;
+}
+
+.music-player .music-subtext{
+	font-size: 20px;
+	font-family: "Raleway", sans-serif;
+	color: #14456e
+}
+
+.music-player .music-player-content{
+	margin-bottom: 50px;
+	font-family: "Raleway", sans-serif;
+	display:-webkit-box;
+}
+
+.image{
+	display: -webkit-box;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Styles for the meditation timer section */
+.meditation-timer {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 400px;
+}
+
+.meditation-timer h2 {
+  font-size: 38px;
+  margin-bottom: 16px;
+	color: #146580
+}
+
+.timer-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.timer-controls select {
+  font-size: 22px;
+  padding: 8px 12px;
+  border-radius: 15px;
+  margin-right: 8px;
+  background-color: #ffffff;
+  border: 1px solid #1abc9c;
+}
+
+.timer-controls button {
+  font-size: 20px;
+  padding: 8px 16px;
+  border-radius: 16px;
+  background-color: #1abc9c;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.6s ease;
+}
+
+.timer-controls button:hover {
+  background-color: #00bfff;
+}
+
+.countdown-display {
+  font-size: 68px;
+  font-weight: 1000;
+	color: #f7f7f7;
+	margin-bottom: 250px
+}
+
+.quote-generator {
+  text-align: center;
+  padding: 20px;
+}
+
+.quote-generator-header {
+  font-size: 36px;
+  margin-bottom: 10px;
+	color:#146580
+}
+
+.quote-generator-description {
+  font-size: 24px;
+  margin-bottom: 20px;
+	color:#194a72
+}
+
+.quote-container {
+  margin-bottom: 20px;
+}
+
+.rating-stars {
+  display: none;
+  margin-top: 10px;
+}
+
+#generate-button {
+  padding: 12px 24px;
+  font-size: 22px;
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.6s, background-color 0.8s;
+}
+
+#generate-button:hover {
+  transform: scale(1.05);
+  background-color: #17a589;
+
+}
+	
+#quote-text{
+	font-size: 32px;
+	margin-top:50px;
+	color:#ffffff;
+	font-weight:700;
+	font-family: "Chakra Petch", sans-serif
+	
+}
+
+#quote-author{
+	font-size: 18px;
+	margin-top:20px;
+	color:#f2f2f2;
+	font-family: "Chakra Petch", sans-serif
+	
+}
+
+
+.star {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #f1c40f;
+  border-radius: 50%;
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+.star:hover {
+  background-color: #f1c40f;
+}
+
+.star.filled {
+  background-color: #f1c40f;
+}
+
+
+.library {
+  padding: 20px;
+}
+
+.library h2 {
+	margin-top:250px;
+  font-size: 40px;
+  margin-bottom: 10px;
+	color: #146580
+}
+
+.library .description {
+  font-size: 23px;
+  margin-bottom: 20px;
+	color:#2f6185
+}
+
+.library h3 {
+	color:#146580;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.article-links {
+	color:#146580;
+  font-size: 25px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.article-links li {
+	color:#146580;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.article-links a {
+	color:#146580;
+  font-size: 25px;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.article-links a:hover {
+  text-decoration: underline;
+}
+
+
+.library .video-links {
+  display: flex;
+	font-size: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+	color:#146580;
+}
+
+.library .video-link {
+  flex: 0 0 calc(33.33% - 10px);
+	font-size: 25px;
+  margin-right: 10px;
+	color:#146580;
+}
+
+.library .video-link a {
+	font-size: 25px;
+  display: block;
+  text-decoration: none;
+	color:#146580;
+}
+
+.book-links {
+  list-style-type: none;
+  padding: 0;
+	color:#146580;
+  font-size: 25px;
+}
+
+.book-links li {
+  margin-bottom: 10px;
+	color:#146580;
+  font-size: 25px;
+}
+
+.book-links a {
+	color:#146580;
+  font-size: 25px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.book-links a:hover {
+  text-decoration: underline;
+	color:#146580;
+  font-size: 25px;
+}
+
+.library .podcast-names {
+	color:#146580;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+	font-size: 25px;
+}
+
+.library .podcast-name {
+  flex: 0 0 calc(33.33% - 10px);
+  margin-right: 10px;
+	color:#146580;
+  font-size: 25px;
+}
+
+.image-collage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+	margin-top: 50px;
+}
+
+.image-collage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.blog-section{
+	margin-left: 50px;
+	font-size: 150%;
+	margin-top: 250px;
+}
+
+.blog-section .blog-desc{
+	color: #0f2a4d;
+}
+
+.dropdown {
+  margin-bottom: 20px;
+	margin-left: 50px;
+}
+
+.dropdown .dropdown-text{
+	font-size: 20px;
+}
+
+.dropdown-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  width: 10px;
+  height: 10px;
+  background-color: #2222;
+  margin-right: 10px;
+  border-radius: 50%;
+  transform: rotate(-90deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.dropdown-header:hover .dropdown-icon {
+  transform: rotate(-90deg) translateY(2px);
+	size:200%;
+}
+
+.dropdown-text {
+  font-size: 18px;
+  color: #2222;
+}
+
+.dropdown-content {
+  display: none;
+  padding: 10px;
+}
+
+.dropdown-content h3 a {
+  color: #2222;
+  text-decoration: underline;
+}
+
+.dropdown-content p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+	color:#0f2a4d;
+	size: 200%
+}
+
+
+
+/* Footer section styles */
+footer {
+	margin-top:250px;
+  background-color: #2e7176;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .contact-section {
+  margin-bottom: 10px;
+	font-size: 20px;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: 300;
+	color: #ffffff;
+}
+
+
+.our-mission .mission-header,
+.our-mission .sub-text,
+.guided-meditation .gallery-header .headerText,
+.guided-meditation .gallery-header .subText,
+.music-player .music-header,
+.music-player .music-subtext,
+#quote-text,
+#quote-author,
+.library h2,
+.library .description,
+.library h3,
+.article-links,
+.article-links li,
+.article-links a,
+.library .video-links,
+.library .video-link a,
+.book-links,
+.book-links li,
+.book-links a,
+.library .podcast-names,
+.library .podcast-name,
+.image-collage img,
+.blog-section,
+.blog-section .blog-desc,
+.dropdown-header .dropdown-icon,
+.dropdown-text,
+.dropdown-content h3 a,
+.dropdown-content p,
+footer .contact-section {
+  color: #222222;
+}
+
+/* Hero section styles */
+.hero .logo,
+.hero .title h1,
+.hero .slideshow .active,
+.hero .dots-navigation .dot.active {
+  color: #ffffff;
+}
+
+/* Styles for the meditation timer section */
+.meditation-timer h2,
+.timer-controls select,
+.timer-controls button,
+.countdown-display,
+.quote-generator-header,
+.quote-generator-description,
+.rating-stars,
+#generate-button,
+.star,
+.library h3,
+.image-collage {
+  color: #333333;
+}
+
+/* Footer section styles */
+footer {
+  color: #ffffff;
+}
